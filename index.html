@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS AI — Seminar 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (FIXED POSITION OUTSIDE SHELL) -->
+<div class="top-nav">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="speakers.html">SPEAKERS</a>
+  <a href="gifts.html">GIFTS</a>
+</div>
+
+<!-- CURSOR + BACKGROUND -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div class="scan-line"></div>
+<div class="mesh-layer"></div>
+<div class="mesh-tert"></div>
+<canvas id="ambient-canvas"></canvas>
+<div class="grid-lines"></div>
+<div class="noise"></div>
+
+<!-- Tech badges -->
+<div class="tech-badge tb1"><span class="tb-dot" style="background:#6C63FF"></span>Figma</div>
+<div class="tech-badge tb2"><span class="tb-dot" style="background:#54C5F8"></span>Flutter</div>
+<div class="tech-badge tb3"><span class="tb-dot" style="background:#00E5CC"></span>Material 3</div>
+<div class="tech-badge tb4"><span class="tb-dot" style="background:#F5C842"></span>Rive</div>
+<div class="tech-badge tb5"><span class="tb-dot" style="background:#FF6B6B"></span>Lottie</div>
+
+<!-- MAIN LAYOUT -->
+<div class="shell">
+
+  <!-- LEFT PANEL -->
+  <aside class="panel-left">
+    <div class="logo">
+      <div class="logo-hex">N</div>
+      <div>
+        <div class="logo-name">NEXUS</div>
+        <div class="logo-sub">AI Seminar 2026</div>
+      </div>
+    </div>
+
+    <div class="left-content">
+      <div id="leftInner" class="left-inner"></div>
+    </div>
+
+    <div class="progress-section">
+      <div class="step-dots" id="stepDots"></div>
+      <div class="progress-label">
+        Step <span id="stepNum">01</span> of 06 — 
+        <span id="stepLbl">Welcome</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main class="panel-right">
+
+    <!-- FORM -->
+    <div class="form-card" id="formCard">
+      <div class="chips" id="chipsRow"></div>
+      <div id="formStep" class="form-step"></div>
+    </div>
+
+    <!-- SUCCESS SCREEN -->
+    <div class="success-screen" id="successScreen">
+      <div class="success-orb">
+        <div class="orb-r3"></div>
+        <div class="orb-r2"></div>
+        <div class="orb-r"></div>
+
+        <div class="orb-core">
+          <svg class="orb-check" width="28" height="28" viewBox="0 0 24 24"
+            fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <h1 class="success-title">You're registered.</h1>
+
+      <p class="success-sub">
+        Your seat at the Nexus AI Seminar 2026 is confirmed.
+        A calendar invite and pre-event materials will arrive shortly.
+      </p>
+
+      <div class="summary-card">
+        <div class="summary-head">
+          <span class="summary-head-label">Registration Details</span>
+          <span class="summary-head-badge">✓ Confirmed</span>
+        </div>
+        <div class="summary-rows" id="summaryRows"></div>
+      </div>
+
+      <button class="btn-restart" id="restartBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <polyline points="23 4 23 10 17 10"></polyline>
+          <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+        </svg>
+        Register another attendee
+      </button>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
