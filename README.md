@@ -1,3 +1,14 @@
+# 🚀 Nexus AI Seminar 2026 — Interactive Registration Website
+
+## 🌐 Live Demo
+
+👉 https://iridescent-ganache-b9ffb1.netlify.app/
+
+---
+## 🔗 Project Links
+
+* 🌐 Live Website: https://iridescent-ganache-b9ffb1.netlify.app/
+* 💻 GitHub Repo: https://github.com/vamsikumarreddy029-bot/AI_WEBINAR_FORM
 
 
 # 🚀 Nexus AI Seminar 2026 — Interactive Registration Website
